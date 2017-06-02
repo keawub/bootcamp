@@ -1,0 +1,221 @@
+html, body {
+	font-family: 'Lato','Myriad Pro';
+	height: 100%;
+	width: 100%;
+	padding-top: 75px;
+}
+
+#hero {
+	background-image: url('../images/girios-banner.png');
+	width: 100%;
+	height: 90%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* Navigation Menu */
+
+.wrapper {
+	background: transparent;
+	height: 70px;
+	width: 100%;
+}
+
+.main-nav {
+	display: inline-block;
+}
+
+.main-nav {
+	list-style: none;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 20px 25px 0 0;
+}
+
+.link {
+	display: inline-block;
+	padding-right: 40px;
+}
+
+.link a {
+	color: #75c586;
+	text-transform: uppercase;
+	text-decoration: none;
+    letter-spacing: 2px;
+	font-size: 20px;
+}
+
+.link a:hover {
+    color: #b8df74;
+}   
+
+/* Apie Mus */
+
+#section-1 {
+	display: flex;
+	flex-direction: column;
+} 
+
+.flex_wrapper2 {
+	margin: 0 5% 0;
+}
+
+.title { 
+	text-align: center; 
+    text-transform: uppercase;
+    color: #6b8a60;
+	padding-bottom: 10px;
+    font-size: 22px; 
+    font-weight: 600;
+}
+
+
+/* Produkcija */
+
+#section-2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 5% 0;
+}
+
+.text, .story {
+	display: inline-block;
+	font-size: 18px;
+    color: #848789;
+	text-align: center;
+	font-weight: 400; 
+    word-spacing: 2px;
+    line-height: 1.8em;
+    margin: 1%;
+	letter-spacing: 1px;
+}
+
+.photo {
+	width: 49%;
+	}
+
+/* Galerija */
+
+#section-3 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 5% 0;
+	justify-content: center;
+}
+
+
+
+/* Footer */
+
+#section-4  .row {
+	background: #a6cc99;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 2%;
+	
+}
+
+a, p {
+	list-style: none;
+	text-decoration: none;
+	color: #457776;
+	text-align: center;
+	line-height: 200%;
+	margin: 20%;
+}
+
+.left, .right {
+	text-align: center;
+	font-size: 110%;
+}
+
+.left i {
+	font-size: 150%;
+	margin-right: 5%;
+}
+
+
+.middle i  { 
+	font-size: 200%;
+	text-align: center;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width:700px) {
+
+/* Mobile navigation */	
+	
+	
+.burger-container{
+    position: absolute;
+  	width: 100px;
+	right: 0;
+}
+
+.burger{
+    cursor: pointer;
+    display: block;
+}
+
+.burger:before,
+.burger:after{
+	content: "";
+    background: #a6cc99;
+    display: block;
+    width: 60px;
+    height: 10px;
+    margin: 12px 0;
+    position: relative;
+    top: 0;
+    transition: all ease-in-out 0.4s;
+}
+
+.burger-container.open .burger:after{
+    transform: rotate(45deg);
+	top: -12px;
+}
+
+.burger-container.open .burger:before{
+    transform: rotate(-45deg);
+    top: 12px;
+}
+
+.main-nav {
+	display: none;
+	color: #a6cc99;
+}
+
+.main-nav li {
+	list-style-type: none;
+}
+
+.burger-container.open .main-nav {
+	display: block;
+	cursor: pointer;
+}
+
+}
+
+@media screen and (max-width:480px){
+	
+	#section-4  .row {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 2%;
+	}
+
+
+	
+}
